@@ -7,6 +7,7 @@
  */
 
 namespace Josebefree\Tuieditor;
+use Illuminate\Support\Facades\Facade;
 
 
 class TuieditorFecade extends Fecade

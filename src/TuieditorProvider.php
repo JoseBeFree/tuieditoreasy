@@ -12,6 +12,8 @@ namespace Josebefree\Tuieditor;
 class TuieditorProvider
 {
 
+    protected $defer = true;
+
     public function register() {
         $this->app->singleton(TuieditorBuilder::class, function ($app) {
             return $app->build(TuieditorBuilder::class);
@@ -25,5 +27,11 @@ class TuieditorProvider
             __DIR__.'/dist/tui-editor-contents.css', public_path(TuieditorBuilder::$path.'/tui-editor-contents.css'), 'public'
         ]);
     }
+
+    public function provider() {
+        return [TuieditorBuilder::class];
+    }
+
+
 
 }
