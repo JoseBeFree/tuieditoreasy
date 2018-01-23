@@ -10,10 +10,10 @@ namespace Josebefree\Tuieditor;
 use Illuminate\Support\Facades\Facade;
 
 
-class TuieditorFecade extends Fecade
+class TuieditorFecade extends Facade
 {
 
-    public function getFacadeAccessor() {
+    public static function getFacadeAccessor() {
         return TuieditorBuilder::class;
     }
 

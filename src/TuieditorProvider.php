@@ -7,9 +7,9 @@
  */
 
 namespace Josebefree\Tuieditor;
+use Illuminate\Support\ServiceProvider;
 
-
-class TuieditorProvider
+class TuieditorProvider extends ServiceProvider
 {
 
     protected $defer = true;
