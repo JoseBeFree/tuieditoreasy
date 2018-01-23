@@ -1,0 +1,30 @@
+{
+    "name": "josebefree/tuieditoreasy",
+    "description": "Install Tui.editor easy for your project",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jose Huerta",
+            "email": "idrek@me.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {},
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Josebefree\\Tuieditor\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Josebefree\\Tuieditor\\TuieditorProvider"
+            ],
+            "aliases": {
+                "Tuieditor": "Josebefree\\Tuieditor\\TuieditorFecade"
+            }
+        }
+    }
+}
