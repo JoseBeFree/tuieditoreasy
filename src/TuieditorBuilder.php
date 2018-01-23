@@ -15,11 +15,11 @@ class TuieditorBuilder
     public  static $path = '/tuieditoreasy';
     public  static $prefix = 'josebefree_';
 
-    protected function Url($url) {
+    protected function Url($url = null) {
         return Url(static::$path."/".$url);
     }
 
-    protected function Name($name) {
+    protected function Name($name = null) {
         return static::$prefix.$name;
     }
 
@@ -31,7 +31,7 @@ class TuieditorBuilder
         return $header;
     }
 
-    public function editor($name) {
+    public function editor($name = null) {
         $div = "<div id='".$this->Name($name)."' name='".$this->Name($name)."'></div>";
         $javscript = "<script>
         var  = new tui.Editor({

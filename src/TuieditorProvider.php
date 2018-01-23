@@ -22,10 +22,8 @@ class TuieditorProvider extends ServiceProvider
 
     public function boot() {
         $this->publishes([
-            __DIR__.'/dist/tuieditor.css', public_path(TuieditorBuilder::$path.'/tuieditor.css'), 'public',
-            __DIR__.'/dist/editor.js', public_path(TuieditorBuilder::$path.'/tui-editor-Editor.js'), 'public',
-            __DIR__.'/dist/tui-editor-contents.css', public_path(TuieditorBuilder::$path.'/tui-editor-contents.css'), 'public'
-        ]);
+            __DIR__ . '/dist' => public_path(TuieditorBuilder::$path)
+        ], 'public');
     }
 
     public function provider() {
