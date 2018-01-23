@@ -12,7 +12,7 @@ namespace Josebefree\Tuieditor;
 class TuieditorFecade extends Fecade
 {
 
-    public function getAccessor() {
+    public function getFacadeAccessor() {
         return TuieditorBuilder::class;
     }
 
