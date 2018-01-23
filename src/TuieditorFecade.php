@@ -13,7 +13,7 @@ class TuieditorFecade extends Fecade
 {
 
     public function getAccessor() {
-        return 'tuieditor';
+        return TuieditorBuilder::class;
     }
 
 }

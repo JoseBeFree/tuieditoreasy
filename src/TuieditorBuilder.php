@@ -25,7 +25,7 @@ class TuieditorBuilder
 
     public function scripts() {
         $header = "
-      <script src=\"".$this->Url("tui-editor-Editor.js")."\"></script>
+      <script src=\"".$this->Url("editor.js")."\"></script>
       <link rel=\"stylesheet\" href=\"".$this->Url("tui-editor.css")."\">
       <link rel=\"stylesheet\" href=\"".$this->Url("tui-editor-contents.css")."\">";
         return $header;
