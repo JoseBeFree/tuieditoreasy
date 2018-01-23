@@ -7,7 +7,7 @@ Install Tui.editor easy for your projects
   
 # Use
 ```php
-Tuieditor:editor($editorName)
+Tuieditor::editor($editorName)
 ```
 
 ```$editorName``` is the name of the field "name" and "id"
